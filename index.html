@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="images/istockphoto-1248994605-612x612.jpg">
+    
+
 </head>
 <body>
 <header class="navigation">
@@ -17,6 +19,7 @@
             <li><a href="#Sources">Sources</a></li>
             <li><a href="#contact">Contact</a></li>
              <li class="badge">67</li>
+             <li><button id = "theme-toggle">Light Mode</button></li>
         </ul>
     </nav>
 </header>
@@ -59,4 +62,32 @@
     <a href="https://pixune.com/blog/video-game-genres/">learn More</a> /
     <a href="#">Email For More Infromation</a>
 </div>
+<section class="rsvp-container">
+    <div class ="rsvp-flex">
+        <div class="rsvp-left">
+            <h7>RSVP TO THE REALM</h7>
+            <p>Join our gaming community and stay updated with the latest news, events, and exclusive content. Sign up now to receive newsletters and special offers directly to your inbox!</p>
+        </div>
+             <div class="rsvp-right">
+        <h3>Gamers joining the Realm</h3>
+        <ul id="rsvpList">
+          <li>Alex the Sigma From Wonderland</li>
+          <li>Sam the pro from Narnia</li>
+          <li>Taylor the newbie from Oz</li>
+          <li>Riley the strategist from Brainrots</li>
+          <li>Skibidi From Rizz Land</li>
+        </ul>
+
+        <form id="rsvpForm">
+          <input type="text" id="gamerName" placeholder="Gamer Tag" required>
+          <input type="text" id="homeState" placeholder="Hometown" required>
+          <input type="email" id="gamerEmail" placeholder="Email Address" required>
+          <button type="submit">Join The Realm</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="start.js"></script>
 </body>
+</html>

@@ -56,8 +56,8 @@ h1{
 .paragraph-row {
     display: flex;
     flex-direction: row;
-    gap: 
-    : 16px 0;
+    gap:0 16px;
+    margin-top: 16px 0;
 }
 .paragraph-row p {
     flex: 1;
@@ -243,3 +243,125 @@ h6 {
 .links a:hover {
     color: red;
 }
+button{
+    background-color: #222;
+    color: white;
+    border: none;   
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.light-mode {
+    background-color: white;
+    color: black;
+}
+.light-mode nav {
+    background-color: #eee;
+}
+.light-mode button {
+    background-color: #ddd;
+    color: black;
+}
+.rsvp-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rsvp-flex {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,0.3);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.rsvp-left, .rsvp-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rsvp-left h7 {
+  color: #ff3366;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.rsvp-left p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.rsvp-right h8 {
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+#rsvpList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+#rsvpList li {
+  background: rgba(255,255,255,0.1);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border-left: 4px solid #00ff88;
+  color: white;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#rsvpForm input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 1em;
+}
+
+#rsvpForm input::placeholder {
+  color: #aaa;
+}
+
+#rsvpForm button {
+  padding: 15px;
+  background: #ff3366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#rsvpForm button:hover {
+  background: #ff0055;
+  transform: scale(1.05);
+}
+
+/* Light mode overrides */
+.light-mode .rsvp-flex {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #ddd;
+}
+
+.light-mode .rsvp-left p { color: #333; }
+.light-mode #rsvpList li { background: #f0f0f0; color: #333; border-left-color: #ff3366; }
+.light-mode #rsvpForm input { background: white; color: #333; }
